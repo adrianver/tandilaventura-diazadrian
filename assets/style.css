@@ -6,644 +6,369 @@ margin:0;
 html, body {
 width: 100%;
 height: 100vh;
-background-color:azure;
+box-sizing: border-box;
+background-color:rgb(212, 212, 212);
 }
-
 
 /*--- HEADER-----*/
-
-.encabezado {
-    display: flex;
-    flex-wrap: wrap;   
     
+.logo {     
+height: 70px;
+width: 70px;
+border-radius: 50%;
+border: 5px solid #5d6869;
+transition: width 4s, height 4s;
 }
-    
-.logo {
-    display: flex; 
-    height: 40px;
-    width: 30px;
-    border-radius: 50%;
-    border: 5px solid #5d6869;
-    align-items: center;
-    transform: rotateZ(15deg);
-    transition: width 4s, height 4s;
-}
-
 
 .logo:hover {
-width: 100px;
-height: 100px;
+width: 90px;
+height: 90px;
 }
-
-
-
 
 #navegacionActiva {
-    
-    color: rgb(87, 23, 23);
-  }
- 
-  header nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 5px;
-      }
-    
-  header nav ul li a{
-  text-shadow: 4px 4px 4px #000;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  color:rgb(16, 172, 16);
-  font-size: 5px;
-  text-shadow: 4px 4px 4px #000;
-  text-transform: uppercase; 
-  text-decoration: none;
-  transition: all 2s;
-    
-  }
-    
-li a:hover {
- color: #f9a91a;
- font-size: 30px;
-
-    
-  }
-        
-
-/*--- SECCIONES INICIO-----*/
-
-#aventura {
-  display: grid;
-  grid-template-areas:
-  "miHeader"
-  "intro"
-  "informacion"
-  "miFooter";
-  grid-template-rows: 150px 1fr 1fr 250px;
-  grid-template-columns: 100%;
-  grid-row-gap: 10px;
-  grid-column-gap: 5px;
-  width: 100%;
-  height: 100vh;
-  margin: 10px;
-}
-
-header {
-  grid-area: miHeader;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  background-color: rgb(239, 250, 239);
-  background-image: linear-gradient(to right,rgb(239, 250, 239), rgb(233, 200, 200));
-  
-}
-
-section#intro {
-  grid-area: intro;
-  background-color: #b5c1c2;
-  
-  }
-
-aside {
-  visibility: hidden;
-}
-
-
-
-
-  footer {
-    grid-area: miFooter;
-    background-image: linear-gradient(to left,rgb(239, 250, 239), rgb(240, 184, 184));
-    border-top: solid black;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-    
-  }
-
-
-section#informacion {
-    grid-area: informacion;  
-    display: flex; 
-    flex-direction: column;
-    height: 100%;
-    }
-    
-#ultimasNovedades{
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-
-section#informacion article {
-  
-  width: 350px;
-  height: 450px;
-  border: 1px solid beige;
-  background-color: #f1f1f1;
-  border-radius: 20px;
-  box-shadow: 5px 3px 2px white;
-  margin: 10px;
-}
-
-
-#informacion article img {
-    width: 90%;
-    height: 350px;
-    border-radius: 20px;    
-
+color: rgb(87, 23, 23);
 }
  
+.navbar {
+width: 100%;
+background-image: linear-gradient(to left,rgb(177, 217, 226), rgb(163, 204, 216));
+}
+
+.navbar ul li a{
+text-shadow: 4px 4px 4px rgb(16, 172, 16);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;
+text-transform: uppercase; 
+font-weight: bolder;
+}
+
+.navbar ul li a:hover {
+background-color: rgb(250, 250, 189);
+}
+
+/*--- FOOTER-----*/
+
+footer {
+background:#202020;
+width: 100%;
+}
+
+.footerInformacion {
+width: 100%;
+max-width: 1200px;
+margin: auto;
+}
+
+.informacion h1 {
+font-size: 1.00rem;
+}
+
+.redesSociales h1 {
+font-size: 1.00rem;
+}
+
+.containerBody {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+}
+
+.informacion {
+max-width: 400px;
+margin-right: 20px;
+}
+
+.informacion p {
+font-size: 0.70rem;
+color: #c7c7c7;  
+margin-top: 20px;
+font-weight: bolder;
+text-align: justify;
+}
+
+.redesSociales {
+max-width: 400px;
+}
+
+.redes {
+margin-top: 20px;
+display: flex;
+}
+
+.redes img {
+width: 20px;                                            
+height: 20px;
+}
+
+.redes label {
+font-size: 0.70rem;
+color: #c7c7c7;
+margin-top: 10px;
+margin-left: 20px;  
+}
+
+.contacto {
+max-width: 400px;
+}
+
+.contactos {
+margin-top: 20px;
+display: flex;
+}
+
+.contacto h1 {
+font-size: 1.00rem;
+}
+
+.contacto img {
+width: 20px;
+height: 20px;
+}
+
+.contactos label {
+font-size: 0.70rem;
+color: #c7c7c7;
+margin-left: 20px;
+max-width: 140px;
+margin-top: 10px;
+}    
+
+.containerFooter {
+width: 100%;
+background: #101010;
+display: flex;
+padding: 20px;
+justify-content: space-between;
+}
+.condiciones a {
+font-size: 0.70rem;
+color: #c7c7c7;
+text-decoration: none;  
+font-weight: bolder;
+}
+
+.derechos p {
+font-size: 0.70rem;
+color: #c7c7c7;
+font-weight: bolder;
+}
+
+@media screen and (max-width: 900px) {
+.containerBody {
+flex-wrap: wrap;  
+}  
+}
+@media screen and (max-width: 430px) {
+.redesSociales {
+padding-right: 15px;  
+}
+}
 
 /*--- FORMATO-----*/
 
 h1 {
 
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(16, 172, 16);
-    font-size: 30px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:rgba(105, 36, 36, 0.973);
+font-size:1.75rem;
+font-weight: bolder;
 }
 
-@keyframes animation {
-  0% {font-size:30px; color: rgb(16, 172, 16);}
-  25% {font-size:35px; color:rgb(124, 116, 116);}
-  75% {font-size:40px; color:#42adad;}
-  100%{font-size:55px; color:#c3c4c0;}
+h2, h3, h4{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: black;
+font-size: 1,10rem;
+font-weight: bolder;
+}
+
+h3 {
+font-size: 1rem;
+}
+
+h4 {
+margin: 10px 0;
+text-align: center;    
+font-size: 0,75rem;
+}
+ 
+p {   
+color: #000;
+text-align: justify;
+font-size: 0,70rem;
+}
+
+.empresa p {
+
+text-align: justify;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: black;
+font-size: 0,80rem;
+margin: 30px;
+
+}
+.aventura p {
+
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: black;
+font-size: 0,80rem;
+margin-top: 20px;  
+}
+
+.importante p{
+font-size: 1.20rem;
+font-weight: bolder;
+color: black;
+text-align: center;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.importante h1 {
+margin-top: 25px;
 }
 
 
+/*--------------INICIO---------------*/
+.card {
+margin:10px;
+height: auto;
+padding: 10px;  
+}
+.card-img-top {
+padding: 5px;
+}
+
+/*-------------EMPRESA------------------*/
+.d-block {
+border: 8px rgb(93, 104, 104) double;
+height: 500px;
+}
+ 
+  /*-----------------AVENTURA------------*/ 
+.actividades {  
+
+width: auto;
+height: auto;
+margin: 10px;
+padding: 10px;  
+display: grid;
+grid-template-areas:
+    "img "
+    "img"
+    "img"
+    "img"
+    ;
+border: 2px solid white;
+column-gap: 10px;
+row-gap: 10px;
+justify-content: center;
+}
+
+.img {
+transition: all 1s ;
+}
+
+.actividades img {
+width: 300px;
+height: 250px;
+transition: all 1s ;
+border: double bisque;
+padding: 5px;
+margin: 10px;
+border-radius: 20px 0px 20px 0px;
+}
 .animation {
-font-size: 30px;
-color:rgb(16, 172, 16);
+font-size: 1.75rem;
+color:rgba(105, 36, 36, 0.973);
 animation-name:animation;
 animation-iteration-count:2;
 animation-timing-function: linear;
 animation-duration:4s;
 animation-delay: 2s;
-}
-
-
-h2 {
-      
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: rgb(16, 172, 16);
-      font-size: 20px;
-  }
-  
-  h3 {
-      
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: rgb(16, 172, 16);
-      font-size: 10px;
-      font-weight: bolder;
-      justify-content: center;
-  }
-  h4 {
-        margin: 10px 0;
-        text-align: center;    
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(0, 20, 0);
-        font-size: 15px;
-        font-weight: bolder;
-        justify-content: center;
-  }
-  
-  Footer p {
-  
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    font-weight: bolder;
-    color: black;
-    text-align: center;
-    text-shadow: 1px 1px #1b1a1a;
-    
-  }
-
-  section#informacion article h3 {
-    text-align: center; 
-    font-size: 15px;
-}
-
-
-section#informacion h2 {
-  font-size: 15px;
-  text-decoration: underline;
-  justify-content: center;
-  color: #123e12;
-  text-align:center;
-  margin-bottom: 30px;
-}
-
-
-.notaPie p{
-
-font-size: 15px;
-}
-
-
-section#informacion article p {
-  
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: rgb(16, 172, 16);
-    text-align: justify;
-    line-height: 15px;
-    text-align: center;
-    font-weight: bolder;
-}
-  
-/*---------RESOLUCION INICIO-----------*/
-
-
-
-
-@media screen and (min-width: 420px) {
-  #aventura {
-    grid-template-areas:
-      "miHeader miHeader"
-      "intro publicidad"
-      "informacion publicidad"
-      "miFooter miFooter"
-    ;
-    grid-template-columns: auto  150px;
-    
-  }    
-
-  header nav ul li a{
-    
-    font-size: 3px;  }
-
-    aside {
-  
-  grid-area: publicidad;
-  visibility: visible;
-  background-color: #c3dbdd;
-  text-align: justify;
-  }  
-
-aside p {
-
-text-align: center;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: rgb(16, 172, 16);
-font-size: 10px;
-font-weight: bolder;
-justify-content: center;
-
 }   
 
-header nav ul li a{ 
-  font-size: 10px;
-  margin-left: 5px; 
-    
-}
-
-.logo {
-  width: 40px;
-       
-}
-
-section#informacion h2 {
-  font-size: 12px;
-  
-}
-
-
-section#informacion h3 {
-  font-size: 10px;
-  
-}
-
-section#informacion article {
-  width: 250px;
-  height: 400px;
-}
-
-
-#informacion article img {
-    width: 90%;
-    height: 250px;
-}
-
-aside {
-
-  width: 150px;
-  
-  }
-  
-  aside img {
-  width: 100px;
-  }
-   
-#aventura {
-  margin: 0
-
-}
-
-}
-@media screen and (min-width: 620px) {
-    #aventura {
-      grid-template-areas:
-        "miHeader miHeader"
-        "intro publicidad"
-        "informacion publicidad"
-        "miFooter miFooter"
-      ;
-      grid-template-columns: auto  250px;
-      grid-template-rows: 100px 100px 1fr 100px;
-    }    
-
-aside {
-    visibility: visible;
-    width: 250px;
-    }  
-
-aside img {
-
-width: 200px;  
-
-}
-
-    aside p {
- 
-  font-size: 15px;
-  }   
-         
-  
-  section#informacion h2 {
-    font-size: 10px;
-    
-  }
-
-  section#informacion h3 {
-    font-size: 10px;
-    
-  }
-
-  section#informacion article {
-    width: 350px;
-    height: 350px;
-  }
-  
-  
-  #informacion article img {
-      width: 90%;
-      height: 200px;
-  }
-  
-  }
- 
-  /*-----------------AVENTURA------------*/ 
-.actividades {  
-
-    width: auto;
-    height: auto;
-    margin: 10px;
-    padding: 10px;  
-    display: grid;
-    grid-template-areas:
-    "img "
-    "img"
-    "img"
-    "img"
-    ;
-    border: 2px solid white;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-
-}
-
-
-img {
-    width: 300px;
-    height: 250px;
-    transition: all 1s ;
-    border: 1px solid floralwhite;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 20px 0px 20px 0px;
-  
-}
-
-
-
-  @media screen and (min-width: 620px) {
-    #aventura {
-      grid-template-areas:
-        "miHeader miHeader"
-        "intro publicidad"
-        "informacion publicidad"
-        "miFooter miFooter"
-      ;
-      grid-template-columns: auto  250px;
-      grid-template-rows: 100px 100px 1fr 100px;
-    }    
-
-aside {
-    visibility: visible;
-    background-color: #c3dbdd;
-    text-align: justify;
-    }  
-
- aside p {
-
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(16, 172, 16);
-  font-size: 15px;
-  font-weight: bolder;
-  justify-content: center;
-
-}   
-
- header nav ul li a{ 
-    font-size: 10px;
-    margin-left: 5px; 
-      
-}
-
-  .logo {
-    width: 70px;
-         
-  }
-
-  section#informacion h2 {
-    font-size: 10px;
-    
-  }
-
-
-  section#informacion h3 {
-    font-size: 10px;
-    
-  }
-
-  section#informacion article {
-    width: 300px;
-    height: 350px;
-  }
-  
-  
-  #informacion article img {
-      width: 90%;
-      height: 200px;
-  }
-  
-     
-
-
-}
- /*-----------------AVENTURA------------*/ 
-.actividades {  
-
-    width: auto;
-    height: auto;
-    margin: 10px;
-    padding: 10px;  
-    display: grid;
-    grid-template-areas:
-    "img "
-    "img"
-    "img"
-    "img"
-    ;
-    border: 2px solid white;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-
-}
-
-
-img {
-    width: 300px;
-    height: 250px;
-    transition: all 1s ;
-    border: 1px solid floralwhite;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 20px 0px 20px 0px;
-  
-    
+@keyframes animation {
+0% {font-size:1.75rem; color: rgba(105, 36, 36, 0.973);}
+25% {font-size:2.00rem; color:rgb(124, 116, 116);}
+75% {font-size:2.25rem; color:#42adad;}
+100%{font-size:2.50rem; color:#c3c4c0;}
 }
 
 /*----------RESOLUCION AVENTURA--------*/
 
 @media screen and (min-width: 800px) {
-    .actividades {  
-        
-        grid-template-areas:
-        "img img  "
-        "img img"
-        "img img"
-        "img img"
-        ;
-        margin: 10px;
-        padding: 10px;  
-        justify-content:space-around;
-    }
-
-    img {
-        width: 370px;
-        height: 230px;
-        
-    }
-    
+.actividades {  
+grid-template-areas:
+"img img  "
+"img img"
+"img img"
+"img img"
+   ;
+margin: 10px;
+padding: 10px;  
+justify-content:space-around;
 }
 
+.actividades img {
+width: 370px;
+height: 230px;
+}   
+}
 @media screen and (min-width: 1300px) {
-    .actividades {  
-        width: auto;
-        grid-template-areas:
-        "img img img  "
-        "img img img "
-        "img img img "
-        "img img img "
-        ;
-        margin: 10px;
-        padding: 10px;  
-        
-    }
+.actividades {  
+width: auto;
+grid-template-areas:
+ "img img img  "
+ "img img img "
+ "img img img "
+ "img img img "
+     ;
+  margin: 10px;
+  padding: 10px;  
+}
+.actividades img {
+width: 370px;
+height: 230px;
+}
 
-    img {
-        width: 370px;
-        height: 230px;
-    }
-
-    img:hover {
-        transform: scale(1.2, 1.2);
-        border: none;    
-    }
-
-    
+img:hover {
+transform: scale(1.2, 1.2);
+border: none;    
+}  
 }
   
-/*---EMPRESA-----*/
-
-.rounded {
-
-  border-radius: 20%;
-  border: double 10px gray;
-  
- }
- 
-  .position {
-  margin-left: 350px;
-  margin-bottom: 550px; 
-  margin-top: 200px;
-  height: auto;
-  width: auto;
-}
-
-.empresa p {
-
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(16, 172, 16);
-  font-size: 15px;
-  margin-top: 20px;
-}
-
 /*---REQUISITOS--*/
 
-
 .requisitos h4 {
-  color: rgb(110, 161, 76);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 50px;
-  margin-top: 90px;
-    
+font-size: 1.25rem; 
+padding: 30px;
+margin-top: 30px;
 }
 .requisitos table {
-  margin: auto;
-  padding-bottom: 20px;
-  width: 50%;
+margin: auto;
+padding-bottom: 20px;
+width: 50%;
 }
 .requisitos table th {
-  background-color: gray;
-  border-radius: 5px;   
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 15px;
-  text-shadow: 1px 1px 1px #000;
-  text-transform: uppercase;    
-  font-size: 15px;
+background-color: gray;
+border-radius: 5px;   
+font-family: Arial, Helvetica, sans-serif;
+padding: 15px;
+text-shadow: 1px 1px 1px #000;
+text-transform: uppercase;    
+font-size: 1rem;
 }
 .requisitos table td {
-  background-color: white;
-  border-bottom: 1px solid #364959;
-  border-radius: 5px;
-  font-family: "Tiro", Verdana, Tahoma;
-  padding: 10px;
-  text-align: left;
-  font-size: 15px;     
+background-color: white;
+border-bottom: 1px solid #364959;
+border-radius: 5px;
+font-family: "Tiro", Verdana, Tahoma;
+padding: 10px;
+text-align: left;
+font-size: 1rem;     
 }
 .requisitos table tr:hover td {
 background: rgb(226, 226, 185);
@@ -651,65 +376,63 @@ background: rgb(226, 226, 185);
 
 /*--CONTACTO--*/
 
-.consultas{
-font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
-margin-top: 80px;
-text-decoration:underline;
-
-}
-
-form {
-
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-margin:auto;
-padding-top: 30px;
-text-shadow: 1px 2px 1px #000;
-width: 40%; 
-
-}
-
-form fieldset {
-background-color: rgb(197, 197, 197);
-border-color: black;
-border-radius: 5px;
-box-shadow: 10px 15px 5px black;
-padding-top: 30px;
-padding-bottom: 40px;
-}
-form fieldset legend {
-background-color: #a5bbce70;
-border: 5px solid #17212c;
-box-shadow: 4px 4px 4px #000;
-font-size: 20px;
-padding: 20px;
-}
-input[type=text],[type=email] { 
-background-color: aliceblue;
+.ibody {
+background-color: #ecf0f3;
+margin: 30px auto;
+width: 450px;
+border: 1px solid #bfd8eb;
+padding: 10px 20px;
 border-radius: 20px;
-margin-bottom: 40px;
-padding: 10px;    
-width: 90%;
+box-sizing: border-box;
 }
-input[type=checkbox] {    
-margin-bottom: 30px;
+.jumbotron {
+background-color: #bfd8eb;
 }
-select {
-background-color:aliceblue;
-font-family:Arial, Helvetica, sans-serif;
-margin-bottom: 30px;
-padding: 5px;
-width: 80%;
+
+.jumbotron h1 {
+font-size: 1.75rem;
+text-align: center;
+color: white;
+text-shadow: 0px 1px white;
+margin: 0;
 }
-select option {
-font-family: Arial, Helvetica, sans-serif;
+
+label {
+margin-top: 6px;
+color: black;
+font-weight: bolder;
+font-size: 13px;
 }
+
 textarea {
-background-color: aliceblue;
-margin-top: 5px;
-margin-bottom: 10px;
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+}
+
+.consultas {
+margin-top: 40px;
+}
+
+.consultas p {
+text-align: center;
+}
+
+@media (max-width: 480px) {
+.ibody {
 width: 95%;
-margin-left: 10px;
+}
+.jumbotron h1{
+ font-size: 1.25rem; 
+}
+.titulo h1 {
+font-size: 1.35rem;
+}
+.titulo h2 {
+  font-size: 1.10rem;
+}
+  .titulo h3 {
+font-size: 1rem;
+}  
 }
 

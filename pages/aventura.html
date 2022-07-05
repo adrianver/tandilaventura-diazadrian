@@ -1,73 +1,140 @@
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tandilaventura</title>
     <link rel="icon" href="../img/images (1).jpg">
+    <title>Tandilaventura</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <script src="../js/jquery.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>  
     <link rel="stylesheet" href="../assets/style.css">
-
-
+    <link rel="stylesheet" href="../assets/animate.css">
+    <script src="../assets/wow.js"></script>
+    <script>
+        new WOW().init();
+     </script>
 </head>
-
 <body>
-    <header>
-        <div class="encabezado">   
-    
-    <picture><img class="logo" src="../img/logo.jpg" alt="logo"></picture>
-    
-</div>
-<nav class="nav">
-
-    <ul class="menu">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="../img/logo.jpg" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       
-      <li><a href="./index.html" >Inicio</a></li>
-      <li><a href="./empresa.html">Empresa</a></li>
-      <li><a href="./aventura.html" id="navegacionActiva">Aventura</a></li>
-      <li><a href="./requisitos.html">Requisitos</a></li>
-      <li ><a  href="./contacto.html">Contacto</a></li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aventura.html"id="navegacionActiva">Aventura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="requisitos.html">Requisitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>       
+  </header>
+      <section>
+        <h1 class="animation">TANDILAVENTURA</h1>
+        <h2>Turismo a la Carta</h2>
+        <h3>Empresa de actividades recreativas</h3>   
     
-                          
-    </ul>
-  </nav>
-</header>
-    <main>
-        <section >
-            <h1>TANDILAVENTURA</h1>
-            <h2>Turismo a la Carta</h2>
-            <h3>Lugar soñado para realizar diferentes actividades recreativas en un entorno natural inigualable</h3>
-                   
-            
-                
-        </section>
-        
-
-        <section class="actividades">
+    </section>
+    <section class="aventura">
+      <p>Lejos del vorágine de la costa atlántica, la ciudad invita al descanso absoluto.
+        También ofrece un sinfín de actividades a cielo abierto: Cabalagatas, canotaje, escalada, mountain bike, tirolesa y trekking, entre otras propuestas.
+       </p>
+    </section>    
+    <section class="actividades">
 
             <img src="../img/ciclismo 2.jpg" alt="Ciclismo Tandil">
             <img src="../img/canotaje6.jpg" alt="Canotaje">
             <img src="../img/parapente1.jpeg" alt="Parapente">
             <img src="../img/trekking2.jpg" alt="Trekking">
-            <img src="../img/senderismo1.jpg" alt="Senderismo">
-            <img src="../img/planeadores.jpg" alt="Planeadores">
-            <img src="../img/Vuelosolo.jpg" alt="Vuelosolo">
-            <img src="../img/VISITA.jpg" alt="Visita IV Brigada Aerea">
-            <img src="../img/senderismo.jpg" alt="Visita IV Brigada Aerea">
+            <img src="../img/senderismo1.jpg" alt="Senderismo">            
+            <img src="../img/Vuelosolo.jpg" alt="Vuelosolo">            
+            <img src="../img/imagen.webp" alt="Visita IV Brigada Aerea">
+            <img src="../img/carrusel/1116-1270905.jpg" alt="Visita IV Brigada Aerea">
 
-        </section>
-        
-
-       
-       
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Copyright &copy; Todos los derechos reservados tandilaventura.com.ar &reg;
-            - 
-            <a href="">To top</a></p>  
-    </footer>
-</body>
-
+      </section>
+  <footer>
+    <div class="footerInfomacion">
+      <div class="containerBody">
+        <div class="informacion">
+              <h1>Nosotros</h1>
+                <p>Somos una pujante empresa de turismo aventura y turismo convencional con paquetes exclusivos, 
+                reconocida a nivel provincial.
+                Contamos además con especialización en Programas Empresariales,
+                Programas de Team Building, Manejos de Grupos Estudiantiles y eventos especiales. 
+                </p>
+                <p>Poseemos 5 años de experiencia en el mercado, con un excelente equipo a medida de las necesidades de nuestros clientes.  
+                  Tenemos la suerte de amar lo que hacemos  hacer lo que amamos, y eso nos permite todos los días trabajar con las ganas y 
+                  el entusiasmo necesario para brindar el servicio de calidad que queremos 
+                  darle a todos nuestros clientes para que, 
+                  una vez más, nos vuelvan a elegir.
+                </p>
+          </div>
+          <div class="redesSociales">
+              <h1>Redes Sociales</h1>
+              <div class="redes">
+                  <img src="../img/carrusel/facebook.png" alt="facebook">
+                  <label>Siguenos en facebook</label> 
+              </div>  
+              <div class="redes">
+                <img src="../img/instagran.jpg" alt="Instagram">
+                <label>Siguenos en Instagram</label> 
+              </div>        
+              <div class="redes">
+                <img src="../img/carrusel/twitternuevo.png" alt="Twitter">
+                <label>Siguenos en twitter</label> 
+              </div>
+              <div class="redes">
+                <img src="../img/carrusel/youtube.png" alt="youtube">
+                <label>Siguenos en youtube</label>
+              </div>      
+              <div class="redes">
+                <img src="../img/carrusel/Google Plus.png" alt="Google Plus">
+                <label>Siguenos en googlePlus</label>
+              </div>
+          </div>
+          <div class="contacto">
+              <h1>Información Contactos</h1>
+            <div class="contactos">
+              <img src="../img/gps.png" alt="">
+              <label>San Felipe 864-Tandil</label> 
+            </div>
+            <div class="contactos">
+               <img src="../img/whatsapp img.png" alt="whatsapp">
+               <label>Celular-Whatsapp: +0542494548603</label>
+            </div>
+            <div class="contactos">
+               <img src="../img/gmail.png" alt="gmail">
+               <label>email:aldiaz@gmail.com</label>
+            </div>
+          </div>    
+        </div>
+      </div> 
+      <div class="containerFooter">
+        <div class="derechos">
+          <p>Copyright &copy; Todos los derechos reservados tandilaventura.com.ar &reg;
+            - <a href="">To top</a></p>  
+        </div>
+      </div>
+    </footer>           
+  </body>
 </html>
