@@ -1,0 +1,34 @@
+.logo {     
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 5px solid #5d6869;
+    transition: width 4s, height 4s;
+    }
+    
+    .logo:hover {
+    width: 90px;
+    height: 90px;
+    }
+    
+    #navegacionActiva {
+    color: rgb(87, 23, 23);
+    }
+     
+    .navbar {
+    width: 100%;
+    background-image: linear-gradient(to left,rgb(177, 217, 226), rgb(163, 204, 216));
+    }
+    
+    .navbar ul li a{
+    text-shadow: 4px 4px 4px rgb(16, 172, 16);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase; 
+    font-weight: bolder;
+    }
+    
+    .navbar ul li a:hover {
+    background-color: rgb(250, 250, 189);
+    }
+    

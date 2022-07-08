@@ -1,0 +1,133 @@
+* {
+    padding:0;
+    margin:0;
+    }
+    
+    html, body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:rgb(212, 212, 212);
+    }
+
+
+h1 { 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgba(105, 36, 36, 0.973);
+    font-size:1.75rem;
+    font-weight: bolder;
+ 
+     &.informacion {
+     font-size: 1.00rem
+ }
+ 
+     &.redesSociales {
+     font-size: 1.00rem;
+ }
+ 
+     &.contacto {
+     font-size: 1.00rem;
+ }
+     &.jumbotron {
+     color: white;
+     text-shadow: 0px 1px white;
+     margin: 0;
+ }
+ }
+ 
+ h2{
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black;
+     font-size: 1.10rem;
+     font-weight: bolder;
+ }
+ 
+ h3 {
+     font-size: 1rem;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black;
+     font-weight: bolder;
+ }
+ 
+ h4 {
+     font-size: 0,75rem;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: black;
+     font-size: 1.10rem;
+     font-weight: bolder;
+     margin: 10px 0;
+  
+     &.requisitos {
+         font-size: 1,25rem; 
+         padding: 30px;
+         margin-top: 30px;
+     }
+ }
+ 
+ p {   
+     color: #000;
+     text-align: center;
+     font-size: 0.70rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    
+        &.empresa  {
+     font-size: 0.80rem;          
+     margin: 30px;
+     }   
+        &.aventura {
+     text-align: center;
+     font-size: 0.80rem;
+     margin-top: 20px;  
+     }
+        &.importante {
+     font-size: 1.20rem;
+     font-weight: bolder;        
+     text-align: center;
+     margin-top: 25px;
+     margin-bottom: 25px;
+     }
+ }        
+        
+ label {
+     margin-top: 6px;
+     color: black;
+     font-weight: bolder;
+     font-size: 0.70rem;
+    
+ 
+
+ }                
+ .condiciones a {
+ font-size: 0.70rem;
+ color: #c7c7c7;
+ text-decoration: none;  
+ font-weight: bolder;
+ }
+                     
+ .informacion p  {
+    color:#c7c7c7;  
+    margin-top: 20px;
+    font-weight: bolder;        
+    }
+           
+.derechos p {     
+    color:#c7c7c7;
+    font-weight: bolder;
+    }
+                                    
+.redes label {
+  color: #c7c7c7;
+  margin-top: 10px;
+   margin-left: 20px;  
+}
+
+.contactos label {
+    color: #c7c7c7;
+    margin-left: 20px;
+     max-width: 140px;
+     margin-top: 10px;
+        }   

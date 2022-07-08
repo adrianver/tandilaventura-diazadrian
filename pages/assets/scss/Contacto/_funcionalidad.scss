@@ -1,0 +1,42 @@
+.ibody {
+    background-color: #ecf0f3;
+    margin: 30px auto;
+    width: 450px;
+    border: 1px solid #bfd8eb;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    }
+    .jumbotron {
+    background-color: #bfd8eb;
+    }
+ 
+    textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    }
+    
+    .consultas {
+    margin-top: 40px;
+    }
+       
+    @media (max-width: 480px) {
+    .ibody {
+    width: 95%;
+    }
+    .jumbotron h1{
+     font-size: 1.25rem; 
+    }
+    .titulo h1 {
+    font-size: 1.35rem;
+    }
+    .titulo h2 {
+      font-size: 1.10rem;
+    }
+      .titulo h3 {
+    font-size: 1rem;
+    }  
+    }
+    
+    

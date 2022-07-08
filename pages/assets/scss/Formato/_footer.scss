@@ -1,0 +1,65 @@
+footer {
+    background:#202020;
+    width: 100%;
+    }
+    
+.footerInformacion {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.containerBody {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.informacion {
+    max-width: 400px;
+    margin-right: 20px;
+ }
+ 
+.redesSociales {
+    max-width: 400px;
+}
+.redes {
+    margin-top: 20px;
+    display: flex;
+}
+    
+.redes img {
+    width: 20px;                                            
+    height: 20px;
+    }
+
+.contacto {
+    max-width: 400px;
+    }
+        
+.contactos {
+    margin-top: 20px;
+    display: flex;
+     }
+.contacto img {
+    width: 20px;
+    height: 20px;
+    }
+
+.containerFooter {
+    width: 100%;
+    background: #101010;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+     }   
+@media screen and (max-width: 900px) {
+    .containerBody {
+    flex-wrap: wrap;  
+     }  
+     }
+@media screen and (max-width: 430px) {
+    .redesSociales {
+    padding-right: 15px;  
+    }
+    }
+        
+    
