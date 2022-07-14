@@ -1,0 +1,39 @@
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;    
+}
+
+
+$map-color:(
+    "fa": rgb(29, 152, 29), "ins": rgb(232, 125, 125), "tw": rgb(20, 0, 0), 
+    "you": rgb(211, 132, 146), "goo": rgb(154, 32, 185), "dir": rgb(121, 121, 217),
+    "what": rgb(157, 170, 157), "ema": rgb(219, 140, 140)
+
+);
+   .facebook:hover {
+    color: map-get($map-color,fa);
+}
+    .instagram:hover {
+    color: map-get($map-color,ins);
+}
+    .twitter:hover {
+    color: map-get($map-color,tw);
+}
+    .youtube:hover {
+    color: map-get($map-color,you);
+}
+    .googlePlus:hover {
+    color: map-get($map-color,goo);
+}
+    .direccion:hover {
+    color: map-get($map-color,dir);
+}
+    .whatsapp:hover {
+    color: map-get($map-color,what);
+}
+    .e_mail:hover {
+    color: map-get($map-color,ema);
+}
+

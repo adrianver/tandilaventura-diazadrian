@@ -12,97 +12,103 @@
 
 
 h1 { 
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgba(105, 36, 36, 0.973);
-    font-size:1.75rem;
+    text-align: $principal;
+    font-family: $font-principal;
+    color:$general;
+    font-size:$grande;
     font-weight: bolder;
  
      &.informacion {
-     font-size: 1.00rem
+     font-size: $base;
  }
  
      &.redesSociales {
-     font-size: 1.00rem;
+     font-size: $base;
  }
  
      &.contacto {
-     font-size: 1.00rem;
+     font-size: $base;
  }
      &.jumbotron {
-     color: white;
+     color: $alternativo;
      text-shadow: 0px 1px white;
      margin: 0;
  }
  }
  
  h2{
-     text-align: center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: black;
-     font-size: 1.10rem;
+     text-align: $principal;
+     font-family: $font-principal;
+     color: $secundario;
+     font-size: $mediano;
      font-weight: bolder;
  }
  
  h3 {
-     font-size: 1rem;
-     text-align: center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: black;
+     font-size: $base;
+     text-align: $principal;
+     font-family: $font-principal;
+     color: $secundario;
      font-weight: bolder;
+     
  }
  
  h4 {
-     font-size: 0,75rem;
-     text-align: center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     color: black;
-     font-size: 1.10rem;
+     font-size: $chica;
+     text-align: $principal;
+     font-family: $font-principal;
+     color: $secundario;
+     font-size: $mediano;
      font-weight: bolder;
-     margin: 10px 0;
+     margin: $small 0;
   
      &.requisitos {
-         font-size: 1,25rem; 
+         font-size: 1.25rem; 
          padding: 30px;
          margin-top: 30px;
      }
  }
  
  p {   
-     color: #000;
-     text-align: center;
-     font-size: 0.70rem;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;  
+     color: $secundario;
+     text-align: $principal;
+     font-size: $chica;
+     font-family: $font-principal;  
     
-        &.empresa  {
-     font-size: 0.80rem;          
-     margin: 30px;
-     }   
-        &.aventura {
-     text-align: center;
-     font-size: 0.80rem;
-     margin-top: 20px;  
+ }
+.aventura p {
+     text-align: $principal;
+     font-size: $base;
+     margin-top: $medium;  
      }
-        &.importante {
-     font-size: 1.20rem;
+.importante p {
+     font-size: $base;
      font-weight: bolder;        
-     text-align: center;
+     text-align: $principal;
      margin-top: 25px;
      margin-bottom: 25px;
      }
- }        
+  
+
+.empresa p {
+        font-size: $base; 
+        text-align: $secundaria;         
+        margin: $large;
+        } 
+
+            
         
  label {
      margin-top: 6px;
-     color: black;
+     color: $secundario;
      font-weight: bolder;
-     font-size: 0.70rem;
+     font-size: $chica;
     
  
 
  }                
  .condiciones a {
- font-size: 0.70rem;
+ font-size: $chica;
  color: #c7c7c7;
  text-decoration: none;  
  font-weight: bolder;
@@ -110,8 +116,9 @@ h1 {
                      
  .informacion p  {
     color:#c7c7c7;  
-    margin-top: 20px;
-    font-weight: bolder;        
+    margin-top: $medium;
+    font-weight: bolder; 
+    text-align: $secundaria;       
     }
            
 .derechos p {     
@@ -121,13 +128,13 @@ h1 {
                                     
 .redes label {
   color: #c7c7c7;
-  margin-top: 10px;
-   margin-left: 20px;  
+  margin-top: $small;
+   margin-left: $medium;  
 }
 
 .contactos label {
     color: #c7c7c7;
-    margin-left: 20px;
-     max-width: 140px;
-     margin-top: 10px;
-        }   
+    margin-top: $small;
+    margin-left: $medium;
+    max-width: 140px;
+    }   

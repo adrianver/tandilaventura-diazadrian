@@ -3,7 +3,7 @@
     margin: 30px auto;
     width: 450px;
     border: 1px solid #bfd8eb;
-    padding: 10px 20px;
+    padding: $small $medium;
     border-radius: 20px;
     box-sizing: border-box;
     }
@@ -20,7 +20,27 @@
     .consultas {
     margin-top: 40px;
     }
+
+    .btn { 
+
+      width:70px;
+      height:40px;
+      background-color:rgb(191, 224, 240);
+      text-align: $principal;
+      color:black;
+      border-radius:10px;
+      border:1px solid transparent;
+      margin: 5px;  
+    }
        
+
+.btn-warning {
+
+  @extend .btn;
+  background-color: rgb(246, 218, 181);
+
+}
+
     @media (max-width: 480px) {
     .ibody {
     width: 95%;

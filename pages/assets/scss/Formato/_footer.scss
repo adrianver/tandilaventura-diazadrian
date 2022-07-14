@@ -9,26 +9,27 @@ footer {
     margin: auto;
 }
 .containerBody {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    @include flex (none,space-between,none);       
+    padding: $medium;
+  
 }
 .informacion {
     max-width: 400px;
-    margin-right: 20px;
+    margin-right: $medium;
  }
  
 .redesSociales {
     max-width: 400px;
 }
 .redes {
-    margin-top: 20px;
+    margin-top: $medium;
     display: flex;
+      
 }
     
 .redes img {
-    width: 20px;                                            
-    height: 20px;
+    width: $medium;                                            
+    height: $medium;
     }
 
 .contacto {
@@ -36,20 +37,23 @@ footer {
     }
         
 .contactos {
-    margin-top: 20px;
+    margin-top: $medium;
     display: flex;
+      
+       
      }
 .contacto img {
-    width: 20px;
-    height: 20px;
+    width: $medium;
+    height: $medium;
     }
 
+    
 .containerFooter {
+    @include flex (none,space-between,none);
     width: 100%;
-    background: #101010;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
+    background: #101010;    
+    padding: $medium;   
+   
      }   
 @media screen and (max-width: 900px) {
     .containerBody {
