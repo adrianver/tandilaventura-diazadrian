@@ -12,10 +12,10 @@
 
 
 h1 { 
+    font-size: $grande;
     text-align: $principal;
     font-family: $font-principal;
-    color:$general;
-    font-size:$grande;
+    color:$general;    
     font-weight: bolder;
  
      &.informacion {
@@ -37,10 +37,10 @@ h1 {
  }
  
  h2{
-     text-align: $principal;
+    font-size: $mediano; 
+    text-align: $principal;
      font-family: $font-principal;
-     color: $secundario;
-     font-size: $mediano;
+     color: $secundario;     
      font-weight: bolder;
  }
  
@@ -74,13 +74,19 @@ h1 {
      text-align: $principal;
      font-size: $chica;
      font-family: $font-principal;  
-    
  }
+ 
 .aventura p {
      text-align: $principal;
      font-size: $base;
      margin-top: $medium;  
      }
+
+#ciclismo, #canotaje, #parapente, #paracaida, #trekking, #senderismo, 
+#vuelo, #cabalgata {
+@extend .aventura 
+
+}     
 .importante p {
      font-size: $base;
      font-weight: bolder;        
@@ -96,7 +102,29 @@ h1 {
         margin: $large;
         } 
 
-            
+
+
+
+.testimonios p {
+    
+font-size: $base; 
+text-align: $secundaria;         
+margin: $large;
+  } 
+
+
+
+#bicicleta p  {
+  
+ font-size: $base; 
+ text-align: $secundaria;
+ line-height: 30px;        
+}         
+
+#bicicleta h2 {
+border: rgb(233, 185, 185) solid 3px;
+
+}
         
  label {
      margin-top: 6px;

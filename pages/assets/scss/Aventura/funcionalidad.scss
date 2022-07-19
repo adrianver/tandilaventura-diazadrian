@@ -1,53 +1,148 @@
 .actividades {  
 
-    width: auto;
-    height: auto;
-    margin: 10px;
-    padding: 10px;  
-    display: grid;
-    grid-template-areas:
+width: auto;
+height: auto;
+margin: 10px;
+padding: 10px;  
+display: grid;
+grid-template-areas:
         "img "
         "img"
         "img"
         "img"
         ;
-    border: 2px solid white;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    }
+border: 2px solid white;
+column-gap: 10px;
+row-gap: 10px;
+justify-content: center;
+   
+}
     
-    .img {
-    transition: all 1s ;
-    }
+.img {
+
+transition: all 1s ;
+}
     
-    .actividades img {
-    width: 300px;
-    height: 250px;
-    transition: all 1s ;
-    border: double bisque;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 20px 0px 20px 0px;
-    }
-    .animation {
-    font-size: 1.75rem;
-    color:rgba(105, 36, 36, 0.973);
-    animation-name:animation;
-    animation-iteration-count:2;
-    animation-timing-function: linear;
-    animation-duration:4s;
-    animation-delay: 2s;
-    }   
+.actividades img {
+
+width: 300px;
+height: 250px;
+transition: all 1s ;
+border: double bisque;
+padding: 5px;
+margin: 10px;
+border-radius: 20px 0px 20px 0px;
+
+}
+
+.animation {
+
+font-size: 1.75rem;
+color:rgba(105, 36, 36, 0.973);
+animation-name:animation;
+animation-iteration-count:2;
+animation-timing-function: linear;
+animation-duration:4s;
+animation-delay: 2s;
+
+}   
     
-    @keyframes animation {
-    0% {font-size:1.75rem; color: rgba(105, 36, 36, 0.973);}
-    25% {font-size:2.00rem; color:rgb(124, 116, 116);}
-    75% {font-size:2.25rem; color:#42adad;}
-    100%{font-size:2.50rem; color:#c3c4c0;}
-    }
+@keyframes animation {
+
+0% {font-size:1.75rem; color: rgba(105, 36, 36, 0.973);}
+25% {font-size:2.00rem; color:rgb(124, 116, 116);}
+75% {font-size:2.25rem; color:#42adad;}
+100%{font-size:2.50rem; color:#c3c4c0;}
+
+}
     
-    /*----------RESOLUCION AVENTURA--------*/
+#ciclismo, #canotaje, #parapente, #paracaida, 
+#trekking, #senderismo, #vuelo, #cabalgata{             
+
+max-width: 1500px;
+margin: auto;
+         
+}
+    
+.containerMultiaventura {
+
+@include flex (none,space-between,none);
+background-color: whitesmoke;
+padding: 20px;        
+border: #c3c4c0 solid 5px;    
+margin: 30px;
+        
+}
+
+.icono img {
+
+padding-right: 10px;
+
+}
+    
+.icono {
+    
+margin-top: 20px;
+display: flex;
+justify-content: center;
+        
+} 
+
+.actividadRecreativa {
+
+max-width: 600px;
+
+}
+
+.multiaventura {
+
+margin-top: 20px;
+display: flex;  
+width: 900px;
+padding-right: 40px; 
+
+}
+
+.multiaventura img {
+   
+width: 100%;
+height: 450px;
+
+}
+
+#parrafo p  {
+
+font-size: 1rem;
+text-align: justify;
+     
+}
+
+.icono h1 {
+
+text-align: $principal;
+font-family: $font-principal;
+color:$general;
+font-size:$mediano;
+font-weight: bolder;
+
+}
+
+
+@media screen and (max-width: 980px) {
+         
+    .multiaventura img {
+        width: 100%px;  
+        height: 250px;
+        margin: 10px;
+        
+}      
+    .containerMultiaventura {
+        flex-wrap: wrap;
+}
+
+} 
+  
+/*----------RESOLUCION AVENTURA--------*/
     
     @media screen and (min-width: 800px) {
     .actividades {  
