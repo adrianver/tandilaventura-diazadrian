@@ -1,69 +1,134 @@
 footer {
-    background:#202020;
-    width: 100%;
-    }
+background:#202020;
+width: 100%;
+}
     
 .footerInformacion {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+   
+width: 100%;
+max-width: 1200px;
+margin: auto;
+
 }
+
 .containerBody {
-    @include flex (none,space-between,none);       
-    padding: $medium;
-  
-}
-.informacion {
-    max-width: 400px;
-    margin-right: $medium;
- }
+@include flex (none,space-between,none);       
+padding: $medium;
  
-.redesSociales {
-    max-width: 400px;
 }
-.redes {
+
+.informacion h1, .redesSociales h1, .contacto h1  {
+
+font-size: $mediano;
+}
+ 
+.informacion p  {
+    color:#c7c7c7;  
     margin-top: $medium;
-    display: flex;
+    text-align: $secundaria;  
+    
+    font: {
+     weight: bolder; 
+     size: $chica;     
+        }
+    }
+
+          
+.derechos p {     
+
+  color:#c7c7c7;
+   
+   font: {
+    weight: bolder;
+    size: $chica; 
+    }
+}                                    
+  
+.redes label {
+      color: #c7c7c7;
+
+margin: {
+    top: $small;
+    left: $medium;  
+    }
+}
+    
+.contactos label {
+   
+   color: #c7c7c7;
+   max-width: 140px;
+
+   margin: {
+   top: $small;
+   left: $medium;
+    }   
+}
+
+
+.informacion {
+max-width: 400px;
+margin-right: $medium;
+}
+
+.redesSociales {
+max-width: 400px;
+}
+
+.redes {
+
+margin-top: $medium;
+display: flex;
       
 }
     
 .redes img {
-    width: $medium;                                            
-    height: $medium;
-    }
+width: $medium;                                            
+height: $medium;
+
+}
 
 .contacto {
-    max-width: 400px;
-    }
+
+max-width: 400px;
+}
         
 .contactos {
-    margin-top: $medium;
-    display: flex;
-      
-       
-     }
-.contacto img {
-    width: $medium;
-    height: $medium;
-    }
 
-    
-.containerFooter {
-    @include flex (none,space-between,none);
-    width: 100%;
-    background: #101010;    
-    padding: $medium;   
+margin-top: $medium;
+display: flex;
+     
+}
+
+.contacto img {
+
+width: $medium;
+height: $medium;
+}
    
-     }   
+.containerFooter {
+
+@include flex (none,space-between,none);
+
+width: 100%;
+background: #101010;    
+padding: $medium;   
+
+}   
+
 @media screen and (max-width: 900px) {
-    .containerBody {
-    flex-wrap: wrap;  
-     }  
-     }
+
+.containerBody {
+
+flex-wrap: wrap;  
+}  
+}
+
 @media screen and (max-width: 430px) {
-    .redesSociales {
-    padding-right: 15px;  
-    }
-    }
+    
+.redesSociales {
+
+padding-right: 15px;  
+}
+}
         
     

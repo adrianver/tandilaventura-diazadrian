@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="somos una pujante empresa de turismo aventura y turismo convencional con paquetes exclusivos, reconocida a nivel provincial.
     Realizamos diferentes actividades recreativas en un entorno natural inigualable">
-    <meta name="keywords" content="contacto turismo aventura, contacto actividad recreativa, experiencia natural, deportes, caminatas, trekking, bicicletas, paracaidismo, mountain bike, parapente, kayac, escalar, extremos, navegar, remo, remar, progrmas de team Building, eventos especiales">
+    <meta name="keywords" content="contacto turismo aventura, contacto actividad recreativa, multiaventura, experiencia natural, deportes, caminatas, trekking, bicicletas, paracaidismo, mountain bike, parapente, kayac, escalar, extremos, navegar, remo, remar, progrmas de team Building, eventos especiales">
     <meta name="author" content="Tandilaventura">
     <meta name="copyright" content="copyright Tandilaventura.com.ar"> 
     <link rel="icon" href="../img/images (1).jpg">
@@ -19,7 +19,7 @@
     <script src="assets/wow.js"></script>
     <script>
         new WOW().init();
-     </script>   
+    </script>   
     
 </head>
 <body>
@@ -28,40 +28,55 @@
         <a class="navbar-brand" href="#"><img src="../img/logo.jpg" alt="Logo" class="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-      
+        </button>      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html" >Inicio <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="empresa.html">Empresa</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown">Empresa</a>
+               <ul class="dropdown-menu">
+                    <li><a href="empresa.html">Quienes Somos</a></li>
+                    <li><a href="empresa.html#Teambuiding">Teambuiding</a></li>
+                    <li><a href="empresa.html#experienciaAventura">Aventura</a></li>
+                    <li><a href="empresa.html#viajeIncentivos">Incentivos</a></li>                       
+               </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown">Aventura</a>
+                 <ul class="dropdown-menu">
+                    <li><a href="aventura.html">Fotos</a></li>
+                    <li><a href="aventura.html#ciclismo">Ciclismo</a></li>
+                    <li><a href="aventura.html#canotaje">Canotaje</a></li>
+                    <li><a href="aventura.html#parapente">Parapente</a></li>
+                    <li><a href="aventura.html#paracaida">Paracaidismo</a></li>                       
+                    <li><a href="aventura.html#trekking">Trekking</a></li>                       
+                    <li><a href="aventura.html#senderismo">Senderismo</a></li>                       
+                    <li><a href="aventura.html#vuelo">Vuelos Planeadores</a></li>                       
+                    <li><a href="aventura.html#cabalgata">Cabalgatas</a></li>                       
+                 </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aventura.html">Aventura</a>
+              <a class="nav-link" href="informacion.html">Información</a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="testimonios.html">testimonios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="requisitos.html">Requisitos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html"id="navegacionActiva">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonios.html">testimonios</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+            </li>            
+          </ul>          
         </div>
       </nav>   
     </header>
     
       <section class="titulo">
         
-      <h1 class="animation">TANDILAVENTURA</h1>
+      <h1 >TANDILAVENTURA</h1>
               <h2>Turismo a la Carta</h2>
                   <h3>Lugar soñado para realizar diferentes actividades recreativas en un entorno natural inigualable </h3>
               
@@ -69,14 +84,13 @@
         
   <section>
     
-    <div class="ibody">
+    <div class="ibody wow animate__backInDown" data-wow-duration="5s" data-wow-delay=".5s">
       
         <div class="jumbotron">
           <h1>Contactenos</h1>
         </div>
       <div class="fcontacto">
-          
-        <form method="POSt" name="fcontacto" id="fcontacto" action="./">
+         <form method="POSt" name="fcontacto" id="fcontacto" action="./">
           <div class="row">
                 <div class="col-md-6">
                   <label>Tu nombre:
@@ -89,115 +103,113 @@
               </div>
           </div>
           <label>Asunto:</label>
-              <input type="text" name="asunto" id="asunto" class="form-control">
+             <input type="text" name="asunto" id="asunto" class="form-control">
              <label>Tu mensaje:</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="form-control">
-            </textarea>
+            </textarea>           
+            <label for="interes"> <h4>¿Como se entrero de nosotros?</h4></label><br />
+            <input type="radio" name="interes" id="Internet" value="Internet" />
+            <label for="Internet">Internet</label><br>
+            <input type="radio" name="interes" id="Redes Sociales" value="Redes Sociales" />
+            <label for="Redes Sociales">Redes Sociales</label><br>
+            <input type="radio" name="interes" id="Publicidad" value="Publicidad" />
+            <label for="Publicidad">Publicidad</label><br>
+            <input type="radio" name="interes" id="Referencias" value="Referencias"/>
+            <label for="Referencias">Referencias</label><br>
+            <input type="radio" name="interes" id="Otros" value="Otros"/>
+            <label for="Otros">Otros</label><br>
             <input type="submit" class="btn btn-info" value="Enviar">
             <input type="reset" class="btn btn-warning" value="Borrar">
         </form>
       </div>
     </div>      
+     
   </section>
     <section class="consultas">
       <h4>Ubicación</h4>
-        <p>San Felipe 864- Tandil</p>
-      </section>
+       <p>San Felipe 864- Tandil</p>
+     </section>
         
-      <section class="consultas">
+    <section class="consultas">
         <h4>Contacto</h4>
         <p>whatsapp: +0542494548603</p>
         <p>Email: aldiaz2979@gmail.com</p>
-      </section>  
-      
+    </section>  
              
-     <section class="consultas">
+    <section class="consultas">
       <h4>Horarios de Atención</h4>
-        <p>Abierto de Lunes a Domingo de 9 a 19 hs.</p>
+       <p>Abierto de Lunes a Domingo de 9 a 19 hs.</p>
       
-      </section> 
+    </section> 
      
-    
-  </section>
-     
-<footer>
+ <footer>
   <div class="footerInfomacion">
     <div class="containerBody">
 
       <div class="informacion">
             <h1>Nosotros</h1>
               <p>Somos una pujante empresa de turismo aventura y turismo convencional con paquetes exclusivos, 
-              reconocida a nivel provincial.
-              Contamos además con especialización en Programas Empresariales,
-              Programas de Team Building, Manejos de Grupos Estudiantiles y eventos especiales. 
-              </p>
-              <p>Poseemos 5 años de experiencia en el mercado, con un excelente equipo a medida de las necesidades de nuestros clientes.  
-                Tenemos la suerte de amar lo que hacemos  hacer lo que amamos, y eso nos permite todos los días trabajar con las ganas y 
-                el entusiasmo necesario para brindar el servicio de calidad que queremos 
-                darle a todos nuestros clientes para que, 
-                una vez más, nos vuelvan a elegir.
-              </p>
-
+              reconocida a nivel provincial. </p>
+              
+              <p> Contamos además con especialización en Programas Empresariales,
+              Programas de Team Building, Manejos de Grupos Estudiantiles y eventos especiales.</p>
+              
+              <p>Poseemos 5 años de experiencia en el mercado, con un excelente 
+                equipo a medida de las necesidades de nuestros clientes.  </p>
+                
+               <p>Tenemos la suerte de amar lo que hacemos  hacer lo que amamos, y eso nos permite todos los días trabajar con las ganas y 
+                el entusiasmo necesario para brindar el servicio de calidad que queremos darle a todos nuestros 
+                clientes para que, una vez más, nos vuelvan a elegir.</p>
       </div>
       <div class="redesSociales">
-        <h1>Redes Sociales</h1>
-        <div class="redes">
-            <img src="../img/carrusel/facebook.png" alt="facebook">
-             <label class="facebook">Siguenos en facebook</label> 
-         </div>
-
-        <div class="redes">
-          <img src="../img/instagran.jpg" alt="Instagram">
-            <label class="instagram">Siguenos en Instagram</label> 
+          <h1>Redes Sociales</h1>
+          <div class="redes">
+              <img src="../img/carrusel/facebook.png" alt="facebook">
+              <label class="facebook">Siguenos en facebook</label> 
+          </div>
+          <div class="redes">
+            <img src="../img/instagran.jpg" alt="Instagram">
+              <label class="instagram">Siguenos en Instagram</label> 
+          </div>
+          <div class="redes">
+            <img src="../img/carrusel/twitternuevo.png" alt="Twitter">
+            <label class="twitter">Siguenos en twitter</label> 
+          </div>
+          <div class="redes">
+            <img src="../img/carrusel/youtube.png" alt="youtube">
+            <label class="youtube">Siguenos en youtube</label>
+          </div>
+        
+          <div class="redes">
+            <img src="../img/carrusel/Google Plus.png" alt="Google Plus">
+            <label class="googlePlus">Siguenos en googlePlus</label>
+          </div>
         </div>
-      
-        <div class="redes">
-          <img src="../img/carrusel/twitternuevo.png" alt="Twitter">
-          <label class="twitter">Siguenos en twitter</label> 
-        </div>
-
-        <div class="redes">
-          <img src="../img/carrusel/youtube.png" alt="youtube">
-          <label class="youtube">Siguenos en youtube</label>
-        </div>
-      
-        <div class="redes">
-          <img src="../img/carrusel/Google Plus.png" alt="Google Plus">
-           <label class="googlePlus">Siguenos en googlePlus</label>
-        </div>
+        <div class="contacto">
+            <h1>Información Contactos</h1>
+          <div class="contactos">
+              <img src="../img/gps.png" alt="direccion Tandilaventura">
+              <label class="direccion">San Felipe 864-Tandil</label> 
+          </div>
+          <div class="contactos">
+              <img src="../img/whatsapp img.png" alt="whatsapp">
+              <label class="whatsapp">Whatsapp:+0542494548603</label>
+          </div>
+          <div class="contactos">
+              <img src="../img/gmail.png" alt="gmail">
+              <label class="e_mail">e-mail:aldiaz@gmail.com</label>
+          </div>
+        </div>    
       </div>
-      <div class="contacto">
-          <h1>Información Contactos</h1>
-        <div class="contactos">
-            <img src="../img/gps.png" alt="">
-            <label class="direccion">San Felipe 864-Tandil</label> 
-        </div>
-        <div class="contactos">
-            <img src="../img/whatsapp img.png" alt="whatsapp">
-             <label class="whatsapp">Whatsapp:+0542494548603</label>
-        </div>
-        <div class="contactos">
-            <img src="../img/gmail.png" alt="gmail">
-             <label class="e_mail">e-mail:aldiaz@gmail.com</label>
-        </div>
-      </div>    
+    </div> 
+    <div class="containerFooter">
+      <div class="derechos">
+        <p>Copyright &copy; Todos los derechos reservados tandilaventura.com.ar &reg;
+          - <a href="">To top</a></p>  
+      </div>
     </div>
-   
-  </div> 
-  <div class="containerFooter">
-    <div class="derechos">
-      <p>Copyright &copy; Todos los derechos reservados tandilaventura.com.ar &reg;
-        - <a href="">To top</a></p>  
-    </div>
-    
-  </div>
-    
-
-
-</footer>  
-  
-</body>
-
+  </footer>  
+ </body>
 </html>
 
 

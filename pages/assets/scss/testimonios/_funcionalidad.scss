@@ -41,6 +41,16 @@ margin-top: 40px;
 
 }
 
+.testimonios p {
+  
+font-size: $p; 
+text-align: $secundaria;         
+margin: $large;
+
+} 
+
+
+/*--------------RESOLUCION--------------------*/
 
 @media screen and (max-width: 600px) {
          
@@ -60,7 +70,5 @@ grid-template-areas:
 "texto"
 "texto"
 }      
-   
-
 }
 

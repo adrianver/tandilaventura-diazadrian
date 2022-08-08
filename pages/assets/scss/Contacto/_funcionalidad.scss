@@ -2,36 +2,86 @@
     background-color: #ecf0f3;
     margin: 30px auto;
     width: 450px;
-    border: 1px solid #bfd8eb;
     padding: $small $medium;
-    border-radius: 20px;
-    box-sizing: border-box;
-    }
+    
+        
+    border: {
+        border: 1px solid #bfd8eb;
+        radius: 20px;
+        sizing: border-box;   
+          }
+}
     .jumbotron {
     background-color: #bfd8eb;
-    }
+  }
  
-    textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
+
+  .jumbotron h1 {
+    color: $alternativo;
+    text-shadow: 0px 1px white;
+    margin: 0;
     }
+   
+  label {
     
-    .consultas {
-    margin-top: 40px;
-    }
+  margin-top: 6px;
+  color: $secundario;
+  
+  
+  font: {
+  weight: bolder;
+  size: $chica;  
+  } 
+  
+  & h4 {
+  text-shadow: none;  
+  font-weight: bolder;
+  }
+  
+  }   
+ textarea {
 
-    .btn { 
+ min-height: 100px;
+ max-height: 200px;
+ max-width: 100%;
 
-      width:70px;
-      height:40px;
-      background-color:rgb(191, 224, 240);
-      text-align: $principal;
-      color:black;
-      border-radius:10px;
+}
+    
+.consultas {
+
+  margin-top: 40px;
+}
+
+.consultas h4 {
+
+font-size: $mediano;
+font-weight: bolder;
+text-decoration: underline 2px black;
+text-transform: uppercase;
+}
+
+
+.consultas p {
+
+font-size: $base;
+
+}
+
+
+.btn { 
+
+width:auto;
+height:40px;
+background-color:rgb(191, 224, 240);
+text-align: $principal;
+color:black;
+margin: 5px;  
+ 
+    border: {
+      radius:10px;
       border:1px solid transparent;
-      margin: 5px;  
-    }
+  }
+  }
        
 
 .btn-warning {
@@ -41,7 +91,9 @@
 
 }
 
-    @media (max-width: 480px) {
+/*------------------RESOLUCION----------*/
+    
+  @media (max-width: 480px) {
     .ibody {
     width: 95%;
     }
@@ -59,4 +111,4 @@
     }  
     }
     
-    
+  

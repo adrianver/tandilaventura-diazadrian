@@ -3,166 +3,106 @@
     margin:0;
     }
     
-    html, body {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color:rgb(212, 212, 212);
-    }
-
+html, body {
+width: 100%;
+height: 100vh;
+box-sizing: border-box;
+background-image: linear-gradient(to right, rgb(225, 252, 225), 
+rgb(240, 210, 177));     
+}    
 
 h1 { 
-    font-size: $grande;
-    text-align: $principal;
-    font-family: $font-principal;
-    color:$general;    
-    font-weight: bolder;
- 
-     &.informacion {
-     font-size: $base;
- }
- 
-     &.redesSociales {
-     font-size: $base;
- }
- 
-     &.contacto {
-     font-size: $base;
- }
-     &.jumbotron {
-     color: $alternativo;
-     text-shadow: 0px 1px white;
-     margin: 0;
- }
- }
- 
- h2{
-    font-size: $mediano; 
-    text-align: $principal;
-     font-family: $font-principal;
-     color: $secundario;     
-     font-weight: bolder;
- }
- 
- h3 {
-     font-size: $base;
-     text-align: $principal;
-     font-family: $font-principal;
-     color: $secundario;
-     font-weight: bolder;
-     
- }
- 
- h4 {
-     font-size: $chica;
-     text-align: $principal;
-     font-family: $font-principal;
-     color: $secundario;
-     font-size: $mediano;
-     font-weight: bolder;
-     margin: $small 0;
-  
-     &.requisitos {
-         font-size: 1.25rem; 
-         padding: 30px;
-         margin-top: 30px;
-     }
- }
- 
- p {   
-     color: $secundario;
-     text-align: $principal;
-     font-size: $chica;
-     font-family: $font-principal;  
- }
- 
-.aventura p {
-     text-align: $principal;
-     font-size: $base;
-     margin-top: $medium;  
-     }
+text-align: $principal;
+color: $general;    
 
-#ciclismo, #canotaje, #parapente, #paracaida, #trekking, #senderismo, 
-#vuelo, #cabalgata {
-@extend .aventura 
-
-}     
-.importante p {
-     font-size: $base;
-     font-weight: bolder;        
-     text-align: $principal;
-     margin-top: 25px;
-     margin-bottom: 25px;
-     }
-  
-
-.empresa p {
-        font-size: $base; 
-        text-align: $secundaria;         
-        margin: $large;
-        } 
-
-
-
-
-.testimonios p {
-    
-font-size: $base; 
-text-align: $secundaria;         
-margin: $large;
-  } 
-
-
-
-#bicicleta p  {
-  
- font-size: $base; 
- text-align: $secundaria;
- line-height: 30px;        
-}         
-
-#bicicleta h2 {
-border: rgb(233, 185, 185) solid 3px;
-
-}
-        
- label {
-     margin-top: 6px;
-     color: $secundario;
-     font-weight: bolder;
-     font-size: $chica;
-    
- 
-
- }                
- .condiciones a {
- font-size: $chica;
- color: #c7c7c7;
- text-decoration: none;  
- font-weight: bolder;
- }
-                     
- .informacion p  {
-    color:#c7c7c7;  
-    margin-top: $medium;
-    font-weight: bolder; 
-    text-align: $secundaria;       
+  font: {   
+    size: $h1;
+    family: $font-principal;
+    weight: bolder;
     }
-           
-.derechos p {     
-    color:#c7c7c7;
-    font-weight: bolder;
-    }
-                                    
-.redes label {
-  color: #c7c7c7;
-  margin-top: $small;
-   margin-left: $medium;  
 }
-
-.contactos label {
-    color: #c7c7c7;
-    margin-top: $small;
-    margin-left: $medium;
-    max-width: 140px;
+ 
+h2 {
+    color: $secundario; 
+    
+    text: { 
+    align: $principal;
+    transform: uppercase;
+    
     }   
+    font: {
+    size: $h2;
+    family: $font-principal;     
+     weight: bolder;
+    }
+
+    & span {
+     font-weight: bolder;
+     font-size: $h2;
+    }
+ }
+
+ h3 {
+    color: $secundario;       
+    text-align: $principal;
+   
+    font: {
+        size: $h3;
+        family: $font-principal;     
+        weight: bolder;
+   }   
+}
+ 
+h4 {
+    color: $secundario;
+    text-align: $principal;     
+    margin: $small 0;
+    
+  font: {
+    size: $h4;
+    font-weight: bolder;
+    }
+}
+    
+p {   
+    color: $secundario;
+    text-align: $principal;
+    
+    font: {
+    size: $p;
+    family: $font-principal;  
+}
+}
+    
+  
+ 
+
+
+
+
+
+
+ 
+
+
+   
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+    
+
+
+
+
+
+

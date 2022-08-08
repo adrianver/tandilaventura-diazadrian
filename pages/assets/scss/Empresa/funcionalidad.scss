@@ -1,49 +1,48 @@
 .d-block {
 
 border: 8px rgb(93, 104, 104) double;
-height: 500px;
+height: 600px;
+}
+
+.actividad {
+
+margin-bottom: 50px;   
 
 }
 
-#bicicleta {
+.card_m {
 
-background-color: whitesmoke;
-padding: 30px;
-
-}
-
-.calendario table {
-
-margin: auto;
-padding-bottom: 20px;
-width: 50%;
+margin: 50px;    
+background-color: ghostwhite;
 
 }
 
-.calendario table th {
+/*-------------------FUENTES-----------*/
+.card-header h2 a {
 
-background-color: gray;
-border-radius: 5px;   
-font-family: Arial, Helvetica, sans-serif;
-padding: 15px;
-text-shadow: 1px 1px 1px #000;
-text-transform: uppercase;    
-font-size: 0.60rem;
-
+color: #155b95;
+text-decoration: none;
+  font: {
+    size: 1.20rem;
+    weight: bolder;
+  }
 }
 
-.calendario table td {
+.empresa p {
+    font-size: $p; 
+    text-align: $secundaria;         
+    margin: $medium;
+    } 
+/*-----------RESOLUCION----------------*/
 
-background-color: white;
-border-bottom: 1px solid #364959;
-border-radius: 5px;
-font-family: "Tiro", Verdana, Tahoma;
-padding: 10px;
-text-align: left;
-font-size: 0.60rem;     
 
+@media screen and (max-width:500px) {
+
+    .card-header h2 a {
+        font-size: $base;
+    }
+    .card-body p {
+        font-size: $chica;
+    }
 }
 
-.calendario table tr:hover td {
-    background: rgb(226, 226, 185);
- }

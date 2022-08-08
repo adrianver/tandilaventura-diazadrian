@@ -17,7 +17,41 @@ row-gap: 10px;
 justify-content: center;
    
 }
-    
+/*-----------FUENTES----------*/ 
+.actividades p {
+
+font-size: $p; 
+text-align: $secundaria;         
+
+}
+
+.aventura p {
+
+text-align: $principal;
+font-size: $mediano;
+margin-top: $medium;  
+}
+
+.icono h1 {
+
+color:$general;
+text-align: $principal;
+
+      font: {
+
+      family: $font-principal;
+      weight: bolder;
+      size:$mediano;       
+    }
+}
+
+#parrafo p  {
+
+   font-size: 1.25rem;
+   text-align: justify;
+        
+}
+/*-----------------FIN----------*/
 .img {
 
 transition: all 1s ;
@@ -37,7 +71,7 @@ border-radius: 20px 0px 20px 0px;
 
 .animation {
 
-font-size: 1.75rem;
+font-size: 1.25rem;
 color:rgba(105, 36, 36, 0.973);
 animation-name:animation;
 animation-iteration-count:2;
@@ -49,10 +83,10 @@ animation-delay: 2s;
     
 @keyframes animation {
 
-0% {font-size:1.75rem; color: rgba(105, 36, 36, 0.973);}
-25% {font-size:2.00rem; color:rgb(124, 116, 116);}
-75% {font-size:2.25rem; color:#42adad;}
-100%{font-size:2.50rem; color:#c3c4c0;}
+0% {font-size:1.25rem; color: rgba(105, 36, 36, 0.973);}
+25% {font-size:1.50rem; color:rgb(124, 116, 116);}
+75% {font-size:1.75rem; color:#42adad;}
+100%{font-size:2.00rem; color:#c3c4c0;}
 
 }
     
@@ -76,21 +110,21 @@ margin: 30px;
 
 .icono img {
 
-padding-right: 10px;
-
+    padding: {
+         bottom: 15px;
+         right: 10px;
 }
-    
+}    
 .icono {
     
 margin-top: 20px;
 display: flex;
-justify-content: center;
-        
+justify-content: center;        
 } 
 
 .actividadRecreativa {
 
-max-width: 600px;
+width: 600px;
 
 }
 
@@ -106,45 +140,42 @@ padding-right: 40px;
 .multiaventura img {
    
 width: 100%;
-height: 450px;
-
+height: auto;
+border: #c3c4c0 2px solid;
 }
 
+/*-------------RESOLUCION--------------*/
+
+
+
+@media screen and (max-width: 1150px) {
+         
+.multiaventura {
+
+width: 100%;
+}
+.multiaventura img {       
+height: auto;
+margin: 10px;        
+
+}      
+
+.containerMultiaventura {
+flex-wrap: wrap;
+}
+   
+.actividadRecreativa{
+width: 100%;
+}  
+   
 #parrafo p  {
 
-font-size: 1rem;
-text-align: justify;
-     
-}
-
-.icono h1 {
-
-text-align: $principal;
-font-family: $font-principal;
-color:$general;
-font-size:$mediano;
-font-weight: bolder;
-
-}
-
-
-@media screen and (max-width: 980px) {
-         
-    .multiaventura img {
-        width: 100%px;  
-        height: 250px;
-        margin: 10px;
-        
-}      
-    .containerMultiaventura {
-        flex-wrap: wrap;
-}
-
-} 
-  
-/*----------RESOLUCION AVENTURA--------*/
+font-size: $p;
     
-    @media screen and (min-width: 800px) {
+}
+}
+/*----------------------RESOLUCION----------------*/
+ @media screen and (min-width: 800px) {
     .actividades {  
     grid-template-areas:
     "img img  "
@@ -174,11 +205,7 @@ font-weight: bolder;
       margin: 10px;
       padding: 10px;  
     }
-    .actividades img {
-    width: 370px;
-    height: 230px;
-    }
-    
+   
     img:hover {
     transform: scale(1.2, 1.2);
     border: none;    

@@ -37,3 +37,11 @@ $map-color:(
     color: map-get($map-color,ema);
 }
 
+$fuentes: ( h1: 2rem, h2: 1.20rem,  h3: 1rem, h4: 0.70rem, p: 1rem);
+
+$h1: map-get($fuentes , h1 );
+$h2: map-get($fuentes , h2 );
+$h3: map-get($fuentes , h3 );
+$h4: map-get($fuentes , h4 );
+$p: map-get($fuentes , p );
+
